@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="trescv2">
+
+<app-wprowadzanie (emiterTresc)='zlapEvent($event)'></app-wprowadzanie>
+<app-dostawalnia [odbierz]='tresc' [odbierzv2]='trescv2'></app-dostawalnia>
+<app-czysz (usunEmit)='usunTresc()'></app-czysz>
+<app-nice-box></app-nice-box>
